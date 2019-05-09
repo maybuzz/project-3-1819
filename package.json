@@ -1,0 +1,26 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maybuzz/project-3-1819.git"
+  },
+  "author": "Luna May Johansson @maybuzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maybuzz/project-3-1819/issues"
+  },
+  "homepage": "https://github.com/maybuzz/project-3-1819#readme"
+}

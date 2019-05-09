@@ -20,9 +20,24 @@ app
 io.on('connection', function(socket) {
 	console.log('user connected ' + '(' + socket.id + ')')
 
-	socket.on('chat message', function(msg) {
+	socket.on('auto message', function(auto) {
+    io.emit('auto message', {message: auto})
+	})
 
+	socket.on('chat message', function(msg) {
     io.emit('chat message', {message: msg})
+	})
+
+	socket.on('name message', function(name) {
+		io.emit('name message', {message: name})
+	})
+
+	socket.on('regio message', function(regio) {
+		io.emit('regio message', {message: regio})
+	})
+
+	socket.on('contact message', function(contact) {
+		io.emit('contact message', {message: contact})
 	})
 
 	socket.on('disconnect', function() {
