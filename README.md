@@ -1,7 +1,7 @@
 # Lifely
 
 ## Summary
-"Kandidaatvinden" interface with new feature, for lifely
+"Kandidaatvinden" interface with new feature, for Lifely
 
 ![chat](/img/final.png)
 
@@ -27,31 +27,28 @@ To install this project you'll have to fork this repository and open your termin
 ```
 
 ## Concept
-A meeting room dashboard application for the Maribeau office in Amsterdam. The dashboard shows several measurements done by sensors placed in the meeting rooms. It shows the availability, temperature, humidity-, co2- and barometric pressure in the room.
+Add a new feature to the existing "Kandidaatvinden" chat for Lifely. I want to give the candidate more responsibility by letting them fill in the form.   
 
-The idea of this app is that employees of the Maribeau office can easily see what rooms are available and what the environment in the rooms is like. The values are shown in bars that change color when the levels raise to high. When the levels raise too high employees in the rooms will be warned.  
+## Conclusion
+I've learned a lot about working with socket.io. A few weeks ago I had no clue how to work with sockets, but this week I finally got the hang of it.
 
+Due to lack of time (and focussing on the socket.io) I haven't implemented keyevents of any of the exclusive design principles.
 
 ## To-do
-- [x] Nodejs, express server
-- [x] Runs without JS
-- [x] Responsive design
-- [x] Filter rooms, different sections
-- [x] Server
-  - [x] Serve time, `noscript` tag
-  - [x] Change bars width according to data
-- [x] Client
-  - [x] Book rooms, `localStorage`
-  - [x] Realtime clock
-- [x] Performance
-  - [x] Service worker and cache control
-  - [x] Offline page
-  - [x] Perceived performance
-  - [x] Critical css
-- [ ] Progressive enhancements
-  - [ ] Change color span according to value
-  - [ ] Update data without refresh
-  - [ ] Notification when levels raise to high
+- [x] Setup server
+- [x] Socket.io
+- [x] Add more socket interaction
+- [x] Recreate the "Kandidaatvinden" design
+- [x] `real-time web`
+- [ ] `web design`
+  - [ ] Key events
+  - [ ] Exclusive design principles
+- [x] Intermediair interface
+  - [x] Add new feature -> `send` pieces of the form
+- [ ] Candidate interface
+  - [ ] Add new feature -> `request` pieces of the form
+- [ ] Auto safe form
+- [ ] Update form real time
 
 
 ## Resources
