@@ -3,12 +3,13 @@
 ## Summary
 "Kandidaatvinden" interface with new feature, for Lifely
 
-![chat](/img/final.png)
+![chat](/final.png)
 
 ## Table of contents
 - [Live demo](#Live-demo)
 - [Install](#Install)
 - [Concept](#Concept)
+- [Conclusion](#Conclusion)
 - [To-do](#To-do)
 - [Resources](#Resources)
 
@@ -27,7 +28,9 @@ To install this project you'll have to fork this repository and open your termin
 ```
 
 ## Concept
-Add a new feature to the existing "Kandidaatvinden" chat for Lifely. I want to give the candidate more responsibility by letting them fill in the form.   
+Add a new feature to the existing "Kandidaatvinden" chat for Lifely. I want to give the candidate more responsibility by letting them fill in the form. For this project I added the new feature to the intermediair side of the chat. The intermediair can `send` pieces of the form to the client. The client can fill them in in the chat. The answers will appear in the form. 
+
+Initially I wanted to create a client (candidate) side chat, so I could work out the feature on this side too. Here clients can `request` pieces of the form so they don't have to wait for the intermediair to respond or send something.  
 
 ## Conclusion
 I've learned a lot about working with socket.io. A few weeks ago I had no clue how to work with sockets, but this week I finally got the hang of it.
@@ -50,12 +53,9 @@ Due to lack of time (and focussing on the socket.io) I haven't implemented keyev
 - [ ] Auto safe form
 - [ ] Update form real time
 
-
-## Resources
-- [Current dashboard at Maribeau office](https://blog.mirabeau.nl/nl/articles/a_smart_meeting_room_dashboard_in_airport_style/ytBXX0WaCkmokgS6ScSOI)
-- [Maribeau documentation](https://bitbucket.org/davebitter/mirabeau-smart-office/src/master/)
-- [Maribeau api, brought to you by Dennisdemennis](http://mirabeau.denniswegereef.nl/api/v1/rooms)
-- [`Request` documentation](https://github.com/request/request)
+## Credits
+[Peter Peerdeman](https://github.com/peterpeerdeman) @peterpeerdeman   
+[Lifely](https://github.com/lifelynl) @lifelynl
 
 ## License
 [MIT](LICENSE) © [Luna May Johansson](https://github.com/maybuzz)
