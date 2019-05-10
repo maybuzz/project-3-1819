@@ -145,6 +145,7 @@ li {
 .header-chat {
   padding: 1rem;
   border-bottom: solid 1px #ccc;
+  position: sticky;
 }
 
 .header-blok1 {
@@ -189,6 +190,7 @@ li {
   grid-area: chat;
   grid-column: span 2;
   height: 85vh;
+  overflow: auto;
 }
 
 #form {

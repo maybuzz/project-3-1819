@@ -1,34 +1,64 @@
-# Project 3 @cmda-minor-web · 2018-2019
+# Lifely
 
-## Design for Real-Time
-Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (CERN & Lifely). De aanbevelingen betreffen het designen voor Real-Time web applicaties. Technieken geleerd bij [Web Design](https://github.com/cmda-minor-web/web-design-1819) en [Real-Time Web](https://github.com/cmda-minor-web/real-time-web-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
+## Summary
+"Kandidaatvinden" interface with new feature, for lifely
 
-## Programma
-Maandag - 9.30 - kickoff
-Woensdag - voortgangbespreking
-Vrijdag presentatie
+![chat](/img/final.png)
 
-## Werkwijze en Criteria
-### Werkwijze
-Full-time week werken aan prototypes / proof of concepts over designen voor real-time web applicaties. Vrijdag is de pitch! Student laat zien dat hij/zij de vakken [Web Design](https://github.com/cmda-minor-web/web-design-1819) en [Real-Time Web](https://github.com/cmda-minor-web/real-time-web-1819) begrijpt en beheerst.
+## Table of contents
+- [Live demo](#Live-demo)
+- [Install](#Install)
+- [Concept](#Concept)
+- [To-do](#To-do)
+- [Resources](#Resources)
 
-Iedere dag zijn er coaches aanwezig voor coaching en feedback. We sluiten de dag af met een stand up, om de status door te spreken. Waar ben je mee bezig? Loop je ergens vast of heb je hulp nodig? Waar sta je?
+## Live demo
+[Click here](https://kandidaatvinden.herokuapp.com/) to see my live demo.
 
-### Beoordeling
-Tijdens de beoordeling krijg je feedback op het resultaat en op je functioneren. De vakdocenten beoordelen In hoeverre je in het project laten zien dat je de bijhorende vakken beheerst en goed hebt toegepast. De opdrachtgver is geïnteresseerd in hoeverre je oplossing voldoet aan de eisen die zijzelf stellen aan hun producten. Misschien laat je wel wat zien waar ze zelf nog niet aan gedacht hebben?
+## Install
+To install this project you'll have to fork this repository and open your terminal
+```bash
+  # insert your username to this link
+  # put this in your terminal to clone the repo
+  git clone https://github.com/your-user-name/project-2-1819/
 
-Het project telt als AVV mee met de Meesterproef.
+  # run the following code to build the app
+  npm start
+```
 
-### Feedback over functioneren
-Je hebt een leergierig, gedreven en zelfredzame houding nodig om de minor te kunnen halen. Welke vaardigheden heb je laten zien? Onderzoekend vermogen? Creativiteit? Conceptueel? In hoeverre komen je houding en verworven vaardigheden overeen met wat een frontender in de praktijk nodig heeft?
+## Concept
+A meeting room dashboard application for the Maribeau office in Amsterdam. The dashboard shows several measurements done by sensors placed in the meeting rooms. It shows the availability, temperature, humidity-, co2- and barometric pressure in the room.
 
-### Web Design
-Het vak [Web Design](https://github.com/cmda-minor-web/web-design-1819) gaat over het ontwerpen en testen van Interactie. Het voordeel van een Frontend Developer (of Web Designer) is dat die techniek begrijpt, kan toepassen én verstand heeft van UX en design. Als je Web technieken begrijpt kun je je ideeën snel prototypen en testen met echte gebruikers, in een browser. Je kan dan aanpassingen doorvoeren, uitproberen en weer testen
+The idea of this app is that employees of the Maribeau office can easily see what rooms are available and what the environment in the rooms is like. The values are shown in bars that change color when the levels raise to high. When the levels raise too high employees in the rooms will be warned.  
 
-### Real-Time Web
-Het vak [Real-Time Web](https://github.com/cmda-minor-web/real-time-web-1819) gaat over het bouwen van een betekenisvolle real-time applicatie. Hierin leer je hoe je een open verbinding (web socket) opzet tussen de client en de server. En hoe je in real-time data biede kanten op kunt versturen.
 
-### Oplevering & criteria
-- Presentatie met je bevindingen bij de opdrachtgever. 
-- Github met je code en readme.
+## To-do
+- [x] Nodejs, express server
+- [x] Runs without JS
+- [x] Responsive design
+- [x] Filter rooms, different sections
+- [x] Server
+  - [x] Serve time, `noscript` tag
+  - [x] Change bars width according to data
+- [x] Client
+  - [x] Book rooms, `localStorage`
+  - [x] Realtime clock
+- [x] Performance
+  - [x] Service worker and cache control
+  - [x] Offline page
+  - [x] Perceived performance
+  - [x] Critical css
+- [ ] Progressive enhancements
+  - [ ] Change color span according to value
+  - [ ] Update data without refresh
+  - [ ] Notification when levels raise to high
 
+
+## Resources
+- [Current dashboard at Maribeau office](https://blog.mirabeau.nl/nl/articles/a_smart_meeting_room_dashboard_in_airport_style/ytBXX0WaCkmokgS6ScSOI)
+- [Maribeau documentation](https://bitbucket.org/davebitter/mirabeau-smart-office/src/master/)
+- [Maribeau api, brought to you by Dennisdemennis](http://mirabeau.denniswegereef.nl/api/v1/rooms)
+- [`Request` documentation](https://github.com/request/request)
+
+## License
+[MIT](LICENSE) © [Luna May Johansson](https://github.com/maybuzz)

@@ -21,13 +21,6 @@
 		el.classList.add('invisible')
 	})
 
-	socket.emit('auto message', function(auto) {
-		var newLi = document.createElement('li')
-		newLi.setAttribute('class', 'normal')
-		newLi.textContent = "Hallo Marie Joe, hoe gaat het?"
-		document.querySelector('#messages').append(newLi)
-	})
-
 	name.addEventListener('click', () => {
 		socket.emit('name message', name)
 	})
